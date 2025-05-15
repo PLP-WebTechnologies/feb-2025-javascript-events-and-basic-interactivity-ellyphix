@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML & CSS Interactive Guide</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Everything You Ever Wanted to Know About HTML & CSS</h1>
+    <p>Explore, interact, and learn!</p>
+  </header>
+
+  <main>
+    <section id="html-intro">
+      <h2>Introduction to HTML</h2>
+      <p>HTML stands for HyperText Markup Language. It is the language used to create the structure of webpages. From simple text to images and forms, HTML lays the foundation for content that you see online. The beauty of HTML is in its simplicity and wide adoption across all browsers and devices. HTML5, the latest version, brought new features such as semantic elements, audio and video tags, and improved form support. HTML uses tags to wrap content, such as &lt;h1&gt; for main headings, &lt;p&gt; ...
+    </section>
+
+    <section id="css-intro">
+      <h2>Introduction to CSS</h2>
+      <p>CSS stands for Cascading Style Sheets. It describes how HTML elements should be displayed on screen. While HTML is responsible for the structure, CSS is responsible for the style. You can change colors, fonts, spacing, alignment, and even create animations with CSS. One of the most powerful features in modern CSS is Flexbox and Grid, which allow for dynamic and responsive layouts. CSS can be written inline, internally, or externally in a separate stylesheet. Using classes and IDs, you can style...
+    </section>
+
+    <section id="event-handling">
+      <h2>Event Handling</h2>
+      <button id="clickBtn">Click me!</button>
+      <p id="clickMessage"></p>
+      <div id="hoverBox">Hover over me!</div>
+      <p id="hoverMessage"></p>
+      <input type="text" id="keyInput" placeholder="Type something" />
+      <p id="keyOutput"></p>
+    </section>
+
+    <section id="interactive-elements">
+      <h2>Interactive Elements</h2>
+      <button id="colorChanger">Change My Color</button>
+      <div class="gallery">
+        <img id="galleryImg" src="https://picsum.photos/id/1015/400/200" alt="Gallery Image">
+        <button onclick="nextImage()">Next Image</button>
+      </div>
+      <div class="tabs">
+        <button onclick="showTab('tab1')">Tab 1</button>
+        <button onclick="showTab('tab2')">Tab 2</button>
+        <div id="tab1" class="tab-content">This is Tab 1 content</div>
+        <div id="tab2" class="tab-content" style="display:none;">This is Tab 2 content</div>
+      </div>
+    </section>
+
+    <section id="form-validation">
+      <h2>Form Validation</h2>
+      <form id="myForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+        <span id="emailError" class="error"></span><br/>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required minlength="8" />
+        <span id="passwordError" class="error"></span><br/>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love and JavaScript ✨</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
